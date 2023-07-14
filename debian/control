@@ -1,0 +1,20 @@
+Source: woof
+Section: net
+Priority: optional
+Maintainer: Hector Cao <hector.cao@canonical.com>
+Rules-Requires-Root: no
+Build-Depends:
+ debhelper-compat (= 13),
+Standards-Version: 4.6.2
+Homepage: https://github.com/simon-budig/woof
+
+Package: woof
+Architecture: any
+Depends:
+ ${shlibs:Depends},
+ ${misc:Depends},
+ python3,
+Description: File sharing utility through http protocol
+ Woof is a small simple stupid webserver that can easily be invoked on a single file. Your partner can access the file with
+ tools he trusts (e.g. wget). No need to enter passwords on keyboards where you don't know about keyboard sniffers, no need
+ to start a huge lot of infrastructure
